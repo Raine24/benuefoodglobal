@@ -30,7 +30,7 @@
   --color-success-bg: #eef6e6;
 
   /* Typography Tokens */
-  --font-family-body: "Jost", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-family-body: "Poppins", "Jost", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-family-heading: "Josefin Sans", "Jost", ui-sans-serif, system-ui, sans-serif;
   --font-family-display: "neulis-neue", "Jost", ui-sans-serif, system-ui, sans-serif;
   --font-size-base: 16.2px;
@@ -1588,7 +1588,7 @@ h1, h2, h3, h4 {
   .faq-panel,
   .partner-contact-box p,
   .footer-links,
-  .footer-links a {
+  .footer-links a:not(.btn) {
     font-size: 1.02rem;
     line-height: 1.65;
   }
@@ -2047,13 +2047,13 @@ h1, h2, h3, h4 {
   gap: 8px;
 }
 
-.footer-links a {
+.footer-links a:not(.btn) {
   text-decoration: none;
   font-size: 0.92rem;
   color: var(--color-ink-muted);
 }
 
-.footer-links a:hover {
+.footer-links a:not(.btn):hover {
   color: var(--color-ink-primary);
   text-decoration: underline;
 }
@@ -2170,6 +2170,11 @@ h1, h2, h3, h4 {
 
 .mobile-drawer.is-open {
   transform: translateX(0);
+}
+
+.mobile-drawer .btn-dark {
+  color: var(--color-ink-on-dark);
+  background: var(--color-bg-dark);
 }
 
 .drawer-header {
