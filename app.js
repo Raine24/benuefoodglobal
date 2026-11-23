@@ -188,12 +188,12 @@
     }, { threshold: 0.01, rootMargin: '120px 0px' });
 
     aosEls.forEach((el, idx) => {
-      el.style.transitionDelay = `${(idx % 4) * 50}ms`;
+      el.style.transitionDelay = `${(idx % 4) * 75}ms`;
       observer.observe(el);
     });
     if (handUnderline) observer.observe(handUnderline);
     window.addEventListener('scroll', revealVisibleAos, { passive: true });
-    revealVisibleAos();
+    requestAnimationFrame(() => revealVisibleAos());
   } else {
     aosEls.forEach((el) => el.classList.add('aos-animate'));
     handUnderline?.classList.add('in-view');
@@ -548,6 +548,11 @@
     saveCart();
     renderCart();
     if (openDrawer) {
+      if (headerCartCount) {
+        headerCartCount.classList.remove('is-bumping');
+        void headerCartCount.offsetWidth;
+        headerCartCount.classList.add('is-bumping');
+      }
       openCartDrawer();
       showToast(`${prod.name} (${chosenVariant}) added to basket.`);
     }
@@ -800,14 +805,32 @@
   });
 
   /* ========================================================================
-     8. FAQ Accordion & Modals & Page Forms
+     8. FAQ Accordion (Smooth CSS Grid Transition) & Modals & Page Forms
      ======================================================================== */
   document.querySelectorAll('.faq-trigger').forEach((btn) => {
+    const item = btn.closest('.faq-item');
+    const panel = document.getElementById(btn.getAttribute('aria-controls'));
+    if (panel && !panel.firstElementChild?.matches('div')) {
+      const inner = document.createElement('div');
+      while (panel.firstChild) inner.appendChild(panel.firstChild);
+      panel.appendChild(inner);
+    }
+    if (btn.getAttribute('aria-expanded') === 'true') {
+      item?.classList.add('is-open');
+      panel?.removeAttribute('hidden');
+    }
     btn.addEventListener('click', () => {
       const expanded = btn.getAttribute('aria-expanded') === 'true';
-      const panel = document.getElementById(btn.getAttribute('aria-controls'));
       btn.setAttribute('aria-expanded', String(!expanded));
-      if (panel) panel.hidden = expanded;
+      item?.classList.toggle('is-open', !expanded);
+      if (panel) {
+        if (expanded) {
+          panel.setAttribute('aria-hidden', 'true');
+        } else {
+          panel.removeAttribute('hidden');
+          panel.setAttribute('aria-hidden', 'false');
+        }
+      }
     });
   });
 
