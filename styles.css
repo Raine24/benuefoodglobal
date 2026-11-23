@@ -1572,6 +1572,37 @@ h1, h2, h3, h4 {
   line-height: 1.7;
 }
 
+@media (max-width: 749px) {
+  body {
+    font-size: 17px;
+  }
+
+  .hero-copy,
+  .spotlight-feature p,
+  .review-card p,
+  .editorial-content p,
+  .editorial-list,
+  .core-values-sub,
+  .value-card p,
+  .info-card p,
+  .faq-panel,
+  .partner-contact-box p,
+  .footer-links,
+  .footer-links a {
+    font-size: 1.02rem;
+    line-height: 1.65;
+  }
+
+  .bs-card__sub {
+    font-size: 0.92rem;
+    line-height: 1.5;
+  }
+
+  .mini-sku__pack {
+    font-size: 0.88rem;
+  }
+}
+
 .editorial-list {
   margin: 0 0 22px;
   padding-left: 20px;
