@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Benue Yam Flour (Elubo) — Benue Food Global</title>
+  <link rel="icon" type="image/png" href="assets/bfg-logo.png" />
+  <meta name="description" content="Benue Yam Flour (Elubo) direct from Benue farmers via Benue Food Global. 100% Pure Benue Yam." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&family=Jost:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#MainContent">Skip to content</a>
+  <div class="scroll-line" aria-hidden="true"><div class="scroll-line__progress" id="scrollProgress"></div></div>
+
+  <div class="announcement-marquee" role="region" aria-label="Store announcements">
+    <div class="marquee-track">
+      <div class="marquee-item">
+        <span>DIRECT FROM BENUE FARMERS • ZERO MIDDLEMEN</span><span class="marquee-sep"></span>
+        <span>HEAD OFFICE: BENUE STATE • PICKUP STATIONS: LAGOS &amp; ABUJA</span><span class="marquee-sep"></span>
+        <span>ORDER ONLINE OR WHATSAPP 08083690567</span><span class="marquee-sep"></span>
+        <span>WHOLESALE &amp; BULK SUPPLY AVAILABLE NATIONWIDE</span><span class="marquee-sep"></span>
+      </div>
+      <div class="marquee-item" aria-hidden="true">
+        <span>DIRECT FROM BENUE FARMERS • ZERO MIDDLEMEN</span><span class="marquee-sep"></span>
+        <span>HEAD OFFICE: BENUE STATE • PICKUP STATIONS: LAGOS &amp; ABUJA</span><span class="marquee-sep"></span>
+        <span>ORDER ONLINE OR WHATSAPP 08083690567</span><span class="marquee-sep"></span>
+        <span>WHOLESALE &amp; BULK SUPPLY AVAILABLE NATIONWIDE</span><span class="marquee-sep"></span>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="page-width header-inner">
+      <button class="header-mobile-toggle" id="mobileMenuBtn" type="button" aria-label="Open navigation menu" aria-controls="mobileDrawer" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+      <a class="header-logo-link" href="index.html" aria-label="Benue Food Global Home">
+        <img src="assets/bfg-logo.png" alt="Benue Food Global Logo" class="header-logo-img" />
+      </a>
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item">
+            <button class="nav-link is-active" type="button" data-mega="shop" aria-expanded="false" aria-controls="mega-shop">
+              <span>Shop</span>
+              <svg class="icon-caret" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg>
+            </button>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="faqs.html">FAQs</a></li>
+          <li class="nav-item">
+            <button class="nav-link" type="button" data-mega="discover" aria-expanded="false" aria-controls="mega-discover">
+              <span>Discover BFG</span>
+              <svg class="icon-caret" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg>
+            </button>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="wholesale.html">Wholesale</a></li>
+          <li class="nav-item"><button class="nav-link" type="button" data-open-modal="basketModal">Build a Basket</button></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn" id="searchToggleBtn" type="button" aria-label="Search products" aria-expanded="false" aria-controls="searchOverlay">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+        <span class="header-divider" aria-hidden="true"></span>
+        <button class="icon-btn" type="button" data-open-modal="partnerModal" aria-label="Partnership & Wholesale Enquiries">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+        </button>
+        <span class="header-divider" aria-hidden="true"></span>
+        <button class="icon-btn" id="openCartBtn" type="button" aria-label="Open order basket" aria-controls="cartDrawer">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+          <span class="cart-count-badge" id="headerCartCount" data-count="0">0</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mega-menu" id="mega-shop" role="region" aria-label="Shop menu">
+      <div class="page-width mega-menu-grid">
+        <a class="mega-card" href="shop.html"><img src="assets/client-food-bundle.jpg" alt="Benue Food Global Staple Food Packs" /><div class="mega-card__body"><h3 class="mega-card__title">Shop All Farm Products</h3><p class="mega-card__sub">Rice, Beans, Garri, Yam Flour, Palm Oil &amp; Pure Honey</p></div></a>
+        <a class="mega-card" href="shop.html?cat=grains"><img src="assets/product-rice-gen.png" alt="BFG Nigerian Local Rice and Grains" /><div class="mega-card__body"><h3 class="mega-card__title">Grains &amp; Flours</h3><p class="mega-card__sub">Stone-Free Rice, Honey Beans, Garri &amp; Yam Flour</p></div></a>
+        <a class="mega-card" href="shop.html?cat=honey-oil"><img src="assets/client-honey-flyer.jpg" alt="BFG Pure Honey and Palm Oil" /><div class="mega-card__body"><h3 class="mega-card__title">Pure Honey &amp; Palm Oil</h3><p class="mega-card__sub">100% Original • No Dilution • Unadulterated</p></div></a>
+        <button class="mega-card" type="button" data-open-modal="basketModal" style="text-align:left;cursor:pointer;"><img src="assets/product-beans-gen.png" alt="Build a Custom Food Basket" /><div class="mega-card__body"><h3 class="mega-card__title">Build a Food Basket</h3><p class="mega-card__sub">Select household or bulk packs &amp; order directly</p></div></button>
+      </div>
+    </div>
+
+    <div class="mega-menu" id="mega-discover" role="region" aria-label="Discover Benue Food Global">
+      <div class="page-width mega-menu-grid">
+        <a class="mega-card" href="about.html"><img src="assets/hero-farmers-gen.png" alt="Local Farmers in Benue State" /><div class="mega-card__body"><h3 class="mega-card__title">About BFG &amp; Mission</h3><p class="mega-card__sub">Connecting buyers directly with Benue farmers</p></div></a>
+        <a class="mega-card" href="about.html#founder"><img src="assets/client-ceo-victor.jpg" alt="Victor Eje Agama, Founder and CEO" /><div class="mega-card__body"><h3 class="mega-card__title">Meet The Founder</h3><p class="mega-card__sub">Victor Eje Agama — CEO, Benue Food Global</p></div></a>
+        <a class="mega-card" href="wholesale.html"><img src="assets/hero-wholesale-gen.png" alt="Benue Food Global Wholesale and Distribution" /><div class="mega-card__body"><h3 class="mega-card__title">Wholesale &amp; Partnerships</h3><p class="mega-card__sub">Bulk supply, farmer &amp; investor enquiries</p></div></a>
+        <a class="mega-card" href="contact.html"><img src="assets/client-depot-team.jpg" alt="Contact Benue Food Global Hubs" /><div class="mega-card__body"><h3 class="mega-card__title">Pickup Hubs &amp; Contact</h3><p class="mega-card__sub">Benue HQ • Lagos &amp; Abuja Stations</p></div></a>
+      </div>
+    </div>
+
+    <div class="search-overlay" id="searchOverlay" role="search" aria-label="Search Benue Food Global">
+      <div class="page-width">
+        <form class="search-form-wrap" id="searchForm">
+          <label class="sr-only" for="searchInput">Search products</label>
+          <input class="search-input" id="searchInput" type="search" placeholder="Search Rice, Honey, Garri, Beans, Yam Flour, Palm Oil..." autocomplete="off" />
+          <button class="btn btn-dark" type="submit">Search</button>
+          <button class="btn btn-light" type="button" id="closeSearchBtn">Close</button>
+        </form>
+        <div class="search-results" id="searchResults" aria-live="polite"></div>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-backdrop" id="pageBackdrop" aria-hidden="true"></div>
+
+  <main id="MainContent" data-product-id="yam-flour-1kg">
+    <section class="pdp-section">
+      <div class="page-width">
+        <nav class="pdp-breadcrumbs" aria-label="Breadcrumb">
+          <a href="index.html">Home</a> <span aria-hidden="true">/</span>
+          <a href="shop.html">Shop</a> <span aria-hidden="true">/</span>
+          <span>Benue Yam Flour (Elubo)</span>
+        </nav>
+
+        <div class="pdp-grid">
+          <div class="pdp-media-stage" style="background:#f2f2f2;" data-aos="fade-up">
+            <img src="assets/product-yam-flour-gen.png" alt="Benue Yam Flour (Elubo) — Benue Food Global" />
+          </div>
+
+          <div class="pdp-info" data-aos="fade-up">
+            <div><span class="pill-badge">100% Pure Benue Yam</span></div>
+            <h1 class="pdp-title">Benue Yam Flour (Elubo)</h1>
+            <p class="pdp-lead">Milled solely from mature Benue white yams — Nigeria’s acclaimed yam capital — dried hygienically and finely sieved into smooth, pure yam flour with zero cassava fillers or artificial colouring.</p>
+
+            <ul class="pdp-specs-list">
+              <li>100% pure Benue yam — zero cheap starch fillers</li>
+              <li>Finely milled and sieved for silky, lump-free amala</li>
+              <li>Hygienically dried and moisture-locked in food-grade pouches</li>
+              <li>Available in 1kg, 5kg, and 25kg catering packs</li>
+            </ul>
+
+            <div class="pdp-variant-group">
+              <strong style="font-size:0.9rem;">Select Pack / Size:</strong>
+              <div class="pdp-variant-pills" role="group" aria-label="Pack size options">
+              <button type="button" class="pdp-variant-btn is-active" data-variant="1kg Sealed Pouch" aria-pressed="true">1kg Sealed Pouch</button>
+              <button type="button" class="pdp-variant-btn " data-variant="5kg Family Pack" aria-pressed="false">5kg Family Pack</button>
+              <button type="button" class="pdp-variant-btn " data-variant="25kg Bulk Sack" aria-pressed="false">25kg Bulk Sack</button>
+              </div>
+            </div>
+
+            <div class="pdp-buy-row">
+              <div class="pdp-qty-box" aria-label="Quantity selector">
+                <button type="button" id="pdpQtyDec" aria-label="Decrease quantity">−</button>
+                <span id="pdpQtyVal">1</span>
+                <button type="button" id="pdpQtyInc" aria-label="Increase quantity">+</button>
+              </div>
+              <button type="button" class="btn btn-dark" id="pdpAddBtn" style="flex:1;min-width:200px;">Add to Order Basket</button>
+            </div>
+
+            <a class="btn btn-lime btn-block" id="pdpWaBtn" href="https://wa.me/2348083690567" target="_blank" rel="noopener">Order Directly on WhatsApp (08083690567)</a>
+
+            <div class="pdp-trust-box">
+              <div><strong>✓ Direct From Benue Farmers:</strong> Zero middleman markups.</div>
+              <div><strong>✓ Pickup &amp; Delivery:</strong> Benue Head Office, Lagos &amp; Abuja Stations, or nationwide dispatch.</div>
+              <div><strong>✓ Bulk &amp; Wholesale:</strong> Need 10+ sacks or wholesale supply? Call <strong>08083690567</strong> or CEO <strong>08133527937</strong>.</div>
+            </div>
+
+            <div class="faq-list" style="margin-top:8px;">
+              <div class="faq-item">
+                <button class="faq-trigger" type="button" aria-expanded="false" aria-controls="pdp-faq-1">
+                  <span class="faq-q-icon" aria-hidden="true">?</span>
+                  <span class="faq-q-text">Sourcing &amp; Quality Standards</span>
+                  <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"/></svg>
+                </button>
+                <div class="faq-panel" id="pdp-faq-1"><div>Produced directly in Benue State using whole harvested white yams, solar-dried on raised hygienic racks and finely milled.</div></div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-trigger" type="button" aria-expanded="false" aria-controls="pdp-faq-2">
+                  <span class="faq-q-icon" aria-hidden="true">?</span>
+                  <span class="faq-q-text">Packaging &amp; Storage</span>
+                  <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"/></svg>
+                </button>
+                <div class="faq-panel" id="pdp-faq-2"><div>Store sealed away from damp surfaces to maintain fine texture and natural aroma.</div></div>
+              </div>
+              <div class="faq-item">
+                <button class="faq-trigger" type="button" aria-expanded="false" aria-controls="pdp-faq-3">
+                  <span class="faq-q-icon" aria-hidden="true">?</span>
+                  <span class="faq-q-text">Pickup Stations &amp; Delivery</span>
+                  <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"/></svg>
+                </button>
+                <div class="faq-panel" id="pdp-faq-3"><div>Available in 1kg/5kg household packs and 25kg catering sacks with nationwide delivery.</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pdp-related-section" aria-labelledby="relatedHeading">
+      <div class="page-width">
+        <h2 class="section-heading" id="relatedHeading">More Benue Farm Staples</h2>
+        <div class="shop-grid" id="pdpRelatedGrid" style="margin-top:26px;"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="footer">
+    <div class="page-width">
+      <div class="footer-grid">
+        <div>
+          <img src="assets/bfg-logo.png" alt="Benue Food Global" class="footer-logo" />
+          <p style="font-size:0.9rem;color:var(--color-ink-muted);margin:0 0 14px;max-width:36ch;">Extending the Food Basket to the Nations. Connecting buyers directly with trusted farmers in Benue State.</p>
+          <h3 class="footer-heading">HARVEST &amp; STOCK UPDATES</h3>
+          <form class="newsletter-form" id="footerNewsletterForm" novalidate>
+            <label class="sr-only" for="footerEmail">Email address</label>
+            <input class="newsletter-input" id="footerEmail" type="email" placeholder="Enter your email" required />
+            <button class="btn btn-dark" type="submit">Subscribe</button>
+          </form>
+          <div id="footerNewsletterMsg" aria-live="polite" style="margin-top:8px;font-size:0.84rem;"></div>
+        </div>
+        <div>
+          <h3 class="footer-heading">HEAD OFFICE &amp; CONTACTS</h3>
+          <ul class="footer-links">
+            <li><strong>Head Office:</strong> Benue State, Nigeria</li>
+            <li><strong>Pickup Stations:</strong> Lagos &amp; Abuja</li>
+            <li><strong>Orders &amp; Enquiries:</strong> <a href="tel:08083690567">08083690567</a></li>
+            <li><strong>Email:</strong> <a href="mailto:benuefoodglobal@gmail.com">benuefoodglobal@gmail.com</a></li>
+            <li><strong>CEO (Partnership &amp; Investment):</strong> <a href="tel:08133527937">08133527937</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-heading">PAGES &amp; QUICK LINKS</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop All Products</a></li>
+            <li><a href="about.html">About &amp; Founder</a></li>
+            <li><a href="wholesale.html">Wholesale &amp; Partnerships</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="contact.html">Contact &amp; Pickup Hubs</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-partner-card">
+            <img src="assets/hero-wholesale-gen.png" alt="Benue Food Global Distribution Hub" />
+            <div><h3 class="footer-heading" style="margin-bottom:4px;">PARTNER OR BUY IN BULK</h3><p style="font-size:0.84rem;color:var(--color-ink-muted);margin:0;">Wholesale &amp; investment enquiries with CEO Victor Eje Agama.</p></div>
+            <a class="btn btn-dark btn-block" href="https://wa.me/2348133527937" target="_blank" rel="noopener">WhatsApp CEO (08133527937)</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 BENUE FOOD GLOBAL — Extending the Food Basket to the Nations.</div>
+        <div class="payment-pills"><span class="payment-pill">Online Invoice</span><span class="payment-pill">Bank Transfer</span><span class="payment-pill">Card / USSD</span><span class="payment-pill">Pay on Pickup</span><span class="payment-pill">WhatsApp Order</span></div>
+      </div>
+    </div>
+  </footer>
+
+  <a class="floating-whatsapp-pill" href="https://wa.me/2348083690567" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.52 3.48A11.86 11.86 0 0 0 12.06 0C5.47 0 .1 5.37.1 11.96c0 2.11.55 4.17 1.6 5.98L0 24l6.23-1.63a11.93 11.93 0 0 0 5.83 1.49h.01c6.59 0 11.96-5.37 11.96-11.96 0-3.2-1.24-6.2-3.51-8.42zM12.07 21.84h-.01a9.9 9.9 0 0 1-5.05-1.38l-.36-.22-3.7.97.99-3.61-.24-.37a9.89 9.89 0 0 1-1.52-5.27c0-5.46 4.44-9.9 9.91-9.9 2.64 0 5.13 1.03 7 2.9a9.84 9.84 0 0 1 2.9 7c0 5.46-4.45 9.88-9.92 9.88zm5.43-7.42c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.21 5.09 4.5.71.31 1.27.49 1.7.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z"/></svg><span>WhatsApp Order</span></a>
+  <button class="floating-chat-tab" id="chatHelpBtn" type="button" data-open-modal="partnerModal">Enquire / Chat</button>
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 15l-6-6-6 6"/></svg></button>
+
+  <div class="drawer-overlay" id="drawerOverlay" aria-hidden="true"></div>
+  <aside class="cart-drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-labelledby="cartDrawerTitle" aria-hidden="true">
+    <div class="drawer-header"><h2 id="cartDrawerTitle">Your BFG Order Basket</h2><button class="icon-btn" id="closeCartBtn" type="button" aria-label="Close order basket">✕</button></div>
+    <div class="drawer-body" id="cartDrawerBody"></div>
+    <div class="drawer-footer" id="cartDrawerFooter"></div>
+  </aside>
+  <nav class="mobile-drawer" id="mobileDrawer" role="dialog" aria-modal="true" aria-label="Mobile menu" aria-hidden="true">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;"><img src="assets/bfg-logo.png" alt="Benue Food Global" style="height:44px;" /><button class="icon-btn" id="closeMobileBtn" type="button" aria-label="Close menu">✕</button></div>
+    <ul class="footer-links" style="font-size:1.1rem;gap:14px;">
+      <li><a href="index.html" class="mobile-nav-link">Home</a></li><li><a href="shop.html" class="mobile-nav-link">Shop Farm Products</a></li><li><button class="btn btn-lime btn-block" type="button" data-open-modal="basketModal">Build a Food Basket</button></li><li><a href="about.html" class="mobile-nav-link">About &amp; Founder</a></li><li><a href="wholesale.html" class="mobile-nav-link">Wholesale &amp; Partnerships</a></li><li><a href="faqs.html" class="mobile-nav-link">FAQs</a></li><li><a href="contact.html" class="mobile-nav-link">Contact &amp; Hubs</a></li>
+    </ul>
+  </nav>
+
+  <div class="modal-backdrop" id="basketModal" role="dialog" aria-modal="true" aria-labelledby="basketModalTitle" aria-hidden="true">
+    <div class="modal-card" style="padding:28px;">
+      <button class="modal-close" type="button" data-close-modal aria-label="Close modal">✕</button>
+      <span class="pill-badge" style="margin-bottom:8px;">Build Your Custom Basket</span>
+      <h2 id="basketModalTitle" style="margin-bottom:6px;">Select Your Benue Farm Staples</h2>
+      <p style="margin:0 0 18px;font-size:0.92rem;color:var(--color-ink-muted);">Choose the packs you need for your home or kitchen, then add them to your order basket.</p>
+      <div id="basketModalList" style="display:grid;gap:10px;margin-bottom:20px;"></div>
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;padding-top:14px;border-top:1px solid var(--color-border-subtle);">
+        <div><span style="font-size:0.84rem;color:var(--color-ink-muted);">Selected:</span><strong id="basketModalCount" style="font-size:1.15rem;margin-left:6px;">0 pack(s)</strong></div>
+        <button class="btn btn-dark" id="addSelectedBasketBtn" type="button">Add Selected to Basket</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-backdrop" id="checkoutModal" role="dialog" aria-modal="true" aria-labelledby="checkoutModalTitle" aria-hidden="true">
+    <div class="modal-card" style="padding:28px;">
+      <button class="modal-close" type="button" data-close-modal aria-label="Close checkout">✕</button>
+      <span class="pill-badge" style="margin-bottom:8px;">Direct Order &amp; Payment Request</span>
+      <h2 id="checkoutModalTitle" style="margin-bottom:6px;">Complete Your Benue Food Global Order</h2>
+      <form id="checkoutForm" novalidate>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;">
+          <div class="form-field"><label for="coName">Full Name *</label><input class="form-control" id="coName" required placeholder="e.g. Adebayo Ogunleye" /><span class="field-error" id="errCoName"></span></div>
+          <div class="form-field"><label for="coPhone">Phone / WhatsApp Number *</label><input class="form-control" id="coPhone" type="tel" required placeholder="e.g. 0803 000 0000" /><span class="field-error" id="errCoPhone"></span></div>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;">
+          <div class="form-field"><label for="coEmail">Email Address</label><input class="form-control" id="coEmail" type="email" placeholder="you@example.com" /></div>
+          <div class="form-field"><label for="coHub">Pickup Station / Delivery Location *</label><select class="form-control" id="coHub"><option value="Benue State Head Office Pickup">Head Office — Benue State Pickup</option><option value="Lagos Pickup Station">Lagos Pickup Station</option><option value="Abuja Pickup Station">Abuja Pickup Station</option><option value="Nationwide Doorstep Delivery">Nationwide Doorstep Delivery</option></select></div>
+        </div>
+        <div class="form-field"><label for="coAddress">Delivery Address / Pickup Note</label><input class="form-control" id="coAddress" placeholder="Street address, landmark, or preferred pickup time" /></div>
+        <div class="form-field"><label for="coMethod">Preferred Payment Method</label><select class="form-control" id="coMethod"><option value="Online Payment Invoice Link (Card / USSD)">Online Payment Link (Card / USSD)</option><option value="Direct Bank Transfer">Direct Bank Transfer (Confirm on WhatsApp)</option><option value="Pay on Pickup at BFG Station">Pay on Pickup (Benue / Lagos / Abuja)</option></select></div>
+        <div id="checkoutSummaryBox" style="background:var(--color-bg-lavender);border-radius:var(--radius-lg);padding:14px 16px;margin-bottom:16px;"></div>
+        <div id="checkoutResult" aria-live="polite"></div>
+        <div style="display:flex;flex-wrap:wrap;gap:10px;"><button class="btn btn-dark" id="checkoutSubmitBtn" type="submit" style="flex:1;">Confirm Order &amp; Request Payment</button><button class="btn btn-lime" id="checkoutWhatsappBtn" type="button" style="flex:1;">Send Order on WhatsApp</button></div>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal-backdrop" id="partnerModal" role="dialog" aria-modal="true" aria-labelledby="partnerModalTitle" aria-hidden="true">
+    <div class="modal-card" style="padding:28px;">
+      <button class="modal-close" type="button" data-close-modal aria-label="Close enquiry modal">✕</button>
+      <span class="pill-badge" style="margin-bottom:8px;">Official Business Enquiries</span>
+      <h2 id="partnerModalTitle" style="margin-bottom:6px;">Contact Benue Food Global</h2>
+      <p style="margin:0 0 14px;font-size:0.9rem;color:var(--color-ink-muted);">Orders: <strong>08083690567</strong> • CEO Direct: <strong>08133527937</strong> • Email: <strong>benuefoodglobal@gmail.com</strong></p>
+      <form id="partnerForm" novalidate>
+        <div class="form-field"><label for="enqType">Enquiry Type *</label><select class="form-control" id="enqType"><option value="Product purchases and orders">Product purchases and orders</option><option value="Wholesale and bulk supply">Wholesale and bulk supply</option><option value="Farmer and supplier partnerships">Farmer and supplier partnerships</option><option value="Distribution partnerships">Distribution partnerships</option><option value="Strategic partnerships and investment enquiries">Strategic partnerships and investment enquiries (CEO Direct)</option></select></div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;">
+          <div class="form-field"><label for="enqName">Your Name / Organisation *</label><input class="form-control" id="enqName" required placeholder="Full name or company" /></div>
+          <div class="form-field"><label for="enqPhone">Phone / WhatsApp *</label><input class="form-control" id="enqPhone" required placeholder="080..." /></div>
+        </div>
+        <div class="form-field"><label for="enqDetails">Message / Quantities Needed *</label><textarea class="form-control" id="enqDetails" rows="3" required placeholder="Tell us what products or partnership scope you need..."></textarea></div>
+        <div id="partnerStatus" aria-live="polite" style="margin-bottom:12px;"></div>
+        <div style="display:flex;flex-wrap:wrap;gap:10px;"><button class="btn btn-dark" type="submit" style="flex:1;">Send Enquiry</button><a class="btn btn-light" href="https://wa.me/2348133527937" target="_blank" rel="noopener" style="flex:1;">WhatsApp CEO (08133527937)</a></div>
+      </form>
+    </div>
+  </div>
+
+  <div class="toast-banner" id="toastBanner" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>

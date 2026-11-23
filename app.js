@@ -13,78 +13,134 @@
   const PRODUCTS = [
     {
       id: 'basket-family',
+      url: 'family-basket.html',
       name: 'Family Staple Basket (5 Products)',
       category: 'bundles',
-      pack: 'Rice 5kg + Beans 5kg + Garri 2kg + Yam Flour 1kg + Palm Oil 1L',
+      pack: 'Rice 10kg/5kg + Beans 5kg + Garri 2kg + Yam Flour 1kg + Palm Oil 1L',
       variants: ['Standard Household Basket (5 Packs)', 'Large Family Basket (10kg Rice + Extras)', 'Custom Bulk Carton'],
       badge: 'Direct Farm Bundle',
       highlights: 'Complete Benue kitchen essentials packed fresh',
+      description: 'Our signature Benue Food Global household bundle combining Nigeria’s finest farm staples straight from Benue State — clean stone-free Local Rice, sorted Honey Beans, crispy Garri, smooth Yam Flour, and unadulterated Palm Oil in one convenient order.',
+      features: [
+        'Eliminates multiple market trips and middleman markups',
+        'Every staple sorted, cleaned, and sealed at our Benue Head Office',
+        'Ideal for families, gifting, staff hampers, and bulk restocks',
+        'Ready for pickup in Benue, Lagos & Abuja or nationwide delivery'
+      ],
       image: 'assets/client-food-bundle.jpg',
       tags: 'bundle basket rice beans garri yam flour palm oil'
     },
     {
       id: 'rice-5kg',
+      url: 'local-rice.html',
       name: 'Nigerian Local Rice',
       category: 'grains',
       pack: '100% Natural • Clean • Stone Free',
       variants: ['5kg Sealed Pouch', '10kg Family Bag', '50kg Wholesale Bag'],
       badge: '100% Stone Free',
       highlights: 'Directly sourced from trusted Benue rice mills',
+      description: 'Naturally grown Benue paddy rice, expertly parboiled, de-stoned, polished, and sorted so every grain cooks clean, fluffy, and aromatic — with zero stones and zero artificial additives.',
+      features: [
+        '100% natural, clean, and stone-free Benue rice',
+        'Hygienically processed and moisture-sealed for long shelf life',
+        'Rich natural aroma for jollof, fried rice, and everyday meals',
+        'Available in 5kg, 10kg, and 50kg wholesale sacks'
+      ],
       image: 'assets/product-rice-gen.png',
       tags: 'rice local stone free grain 5kg 10kg 50kg'
     },
     {
       id: 'honey-500',
+      url: 'pure-honey.html',
       name: 'Benue Pure Honey',
       category: 'honey-oil',
       pack: '100% Original • No Dilution • No Additives',
       variants: ['500ml Hygiene Jar', '1 Litre Family Jar', '5 Litre Bulk Jerrycan'],
       badge: '100% Unadulterated',
       highlights: 'Raw hive honey rich in natural nutrients',
+      description: 'Our honey is 100% natural, harvested from healthy Benue hives and carefully strained to preserve every drop of nature’s goodness. No dilution. No sugar syrups. No additives — just pure, raw, wholesome honey.',
+      features: [
+        '100% Pure & Natural — zero dilution, zero preservatives',
+        'Rich in natural vitamins, minerals, enzymes, and antioxidants',
+        'Supports everyday wellness and natural immunity for the whole family',
+        'Tamper-sealed hygiene jars and bulk containers'
+      ],
       image: 'assets/client-honey-flyer.jpg',
       tags: 'honey pure raw natural 500ml 1l'
     },
     {
       id: 'beans-5kg',
+      url: 'honey-beans.html',
       name: 'Benue Honey Beans',
       category: 'grains',
       pack: 'Cleanly Sorted • Naturally Grown',
       variants: ['5kg Sealed Bag', '10kg Family Bag', '50kg / 100kg Bulk Sack'],
       badge: 'Clean & Sorted',
       highlights: 'Sweet cooking honey beans straight from Benue farms',
+      description: 'Sweet, fast-cooking Benue brown honey beans, hand-sorted and cleaned to remove chaff and grit before hygienic sealing. Rich in plant protein for porridge, moi-moi, akara, and rice & beans.',
+      features: [
+        'Cleanly picked and sorted with zero debris',
+        'Fast-cooking, naturally sweet Benue honey beans',
+        'Hygienically sealed against weevils and moisture',
+        'Available for households (5kg/10kg) and bulk buyers (50kg/100kg)'
+      ],
       image: 'assets/product-beans-gen.png',
       tags: 'beans honey oloyin brown 5kg 10kg'
     },
     {
       id: 'garri-2kg',
+      url: 'benue-garri.html',
       name: 'Crispy Benue Garri',
       category: 'grains',
       pack: 'Hygienically Processed • Sealed Fresh',
       variants: ['2kg Sealed Pouch', '5kg Family Bag', '50kg Wholesale Sack'],
       badge: '100% Natural',
       highlights: 'Crisp, clean Benue cassava garri ready for soaking or eba',
+      description: 'Freshly roasted from Benue-grown cassava tubers with balanced natural fermentation, zero sand, and crisp dry texture — perfect for drinking cold or making smooth, lump-free eba.',
+      features: [
+        '100% natural Benue cassava with clean, sand-free roasting',
+        'Crisp golden texture and authentic sour-sweet balance',
+        'Sealed immediately after cooling to lock in freshness',
+        'Available in 2kg, 5kg, and 50kg wholesale bags'
+      ],
       image: 'assets/product-garri-gen.png',
       tags: 'garri cassava golden white 2kg 5kg'
     },
     {
       id: 'yam-flour-1kg',
+      url: 'yam-flour.html',
       name: 'Benue Yam Flour (Elubo)',
       category: 'grains',
       pack: 'Smooth Milled • Hygienically Packaged',
       variants: ['1kg Sealed Pouch', '5kg Family Pack', '25kg Bulk Sack'],
       badge: '100% Pure Yam',
       highlights: 'Made from premium Benue yams with zero fillers',
+      description: 'Milled solely from mature Benue white yams — Nigeria’s acclaimed yam capital — dried hygienically and finely sieved into smooth, pure yam flour with zero cassava fillers or artificial colouring.',
+      features: [
+        '100% pure Benue yam — zero cheap starch fillers',
+        'Finely milled and sieved for silky, lump-free amala',
+        'Hygienically dried and moisture-locked in food-grade pouches',
+        'Available in 1kg, 5kg, and 25kg catering packs'
+      ],
       image: 'assets/product-yam-flour-gen.png',
       tags: 'yam flour elubo amala 1kg 5kg'
     },
     {
       id: 'palm-oil-1l',
+      url: 'palm-oil.html',
       name: 'Pure Benue Palm Oil',
       category: 'honey-oil',
       pack: 'Unadulterated Red Palm Oil • Leak-Proof',
       variants: ['1 Litre Sealed Bottle', '5 Litre Gallon', '25 Litre Wholesale Keg'],
       badge: 'No Dyes • Natural',
       highlights: 'Rich, thick red palm oil sourced straight from local mills',
+      description: 'Cold-pressed, rich deep-red Benue palm oil sourced straight from trusted local oil mills — 100% natural with zero artificial Sudan dyes, zero bleaching, and low free fatty acid for clean aroma.',
+      features: [
+        '100% unadulterated red palm oil — zero Sudan dye or adulterants',
+        'Rich natural aroma and vibrant colour for soups and stews',
+        'Double-sealed tamper-proof 1L bottles and 5L/25L kegs for safe transit',
+        'Direct farm-gate sourcing from Benue milling cooperatives'
+      ],
       image: 'assets/product-palm-oil-gen.png',
       tags: 'palm oil red cooking 1l 5l 25l'
     }
@@ -266,10 +322,15 @@
     }
 
     searchResults.innerHTML = matches.map((p) => `
-      <button type="button" class="search-result-item" data-search-add="${p.id}">
-        <span><strong>${p.name}</strong> — <small>${p.variants[0]}</small></span>
-        <span><strong>+ Add to Basket</strong></span>
-      </button>
+      <div class="search-result-item" style="cursor:default;">
+        <a href="${p.url}" style="text-decoration:none;flex:1;">
+          <strong>${p.name}</strong> — <small>${p.variants[0]}</small>
+        </a>
+        <div style="display:flex;gap:8px;align-items:center;">
+          <a href="${p.url}" style="font-size:0.84rem;font-weight:600;text-decoration:underline;">View</a>
+          <button type="button" class="btn btn-dark" data-search-add="${p.id}" style="min-height:36px;padding:6px 12px;font-size:0.8rem;">+ Add</button>
+        </div>
+      </div>
     `).join('');
 
     searchResults.querySelectorAll('[data-search-add]').forEach((btn) => {
@@ -355,15 +416,15 @@
   if (catalogueGrid) {
     catalogueGrid.innerHTML = PRODUCTS.filter((p) => p.id !== 'basket-family').map((p) => `
       <div class="mini-sku">
-        <div style="display:flex;gap:12px;align-items:center;">
+        <a href="${p.url}" style="display:flex;gap:12px;align-items:center;text-decoration:none;">
           <img src="${p.image}" onerror="this.onerror=null;this.src='${p.fallbackImage || 'assets/client-food-bundle.jpg'}'" alt="${p.name}" style="width:58px;height:58px;object-fit:cover;border-radius:10px;background:#f2f2f2;flex-shrink:0;" />
           <div style="min-width:0;">
-            <div class="mini-sku__name">${p.name}</div>
+            <div class="mini-sku__name" style="text-decoration:underline;text-underline-offset:3px;">${p.name}</div>
             <div class="mini-sku__pack">${p.variants[0]} · ${p.badge}</div>
           </div>
-        </div>
+        </a>
         <div class="mini-sku__top" style="align-items:center;margin-top:4px;">
-          <span class="mini-sku__pack" style="font-weight:600;color:var(--color-ink-lime);">Farm-Direct Order</span>
+          <a href="${p.url}" class="mini-sku__pack" style="font-weight:700;color:var(--color-ink-lime);text-decoration:none;">View Product →</a>
           <button class="btn btn-dark mini-sku__btn" type="button" data-add-id="${p.id}" data-variant="${p.variants[0]}">+ Add to Basket</button>
         </div>
       </div>
@@ -382,13 +443,13 @@
 
     shopGrid.innerHTML = filtered.map((p) => `
       <article class="bs-card ${p.id === 'basket-family' ? 'is-featured' : ''}">
-        <div class="bs-card__band">
+        <a href="${p.url}" class="bs-card__band" style="text-decoration:none;">
           <span class="bs-card__kicker">${p.badge}</span>
           <h2 class="bs-card__title">${p.name}</h2>
-        </div>
-        <div class="bs-card__media">
+        </a>
+        <a href="${p.url}" class="bs-card__media" aria-label="View ${p.name} details">
           <img src="${p.image}" onerror="this.onerror=null;this.src='${p.fallbackImage || 'assets/client-food-bundle.jpg'}'" alt="${p.name}" />
-        </div>
+        </a>
         <div class="bs-card__pricing">
           <span class="pill-badge">Direct From Benue Farms</span>
           <div class="bs-card__sub" style="margin-top:4px;">${p.highlights}</div>
@@ -399,7 +460,10 @@
           </select>
           <div class="bs-card__shipping">✓ Benue HQ, Lagos &amp; Abuja pickup ready</div>
         </div>
-        <button class="btn btn-dark btn-block bs-card__cta" type="button" data-shop-add="${p.id}">Add to Order Basket</button>
+        <div style="display:grid;gap:8px;margin-top:12px;">
+          <button class="btn btn-dark btn-block" type="button" data-shop-add="${p.id}">Add to Order Basket</button>
+          <a class="btn btn-light btn-block" href="${p.url}">View Product Page</a>
+        </div>
       </article>
     `).join('');
 
@@ -947,6 +1011,78 @@
       closeAllModals();
     }
   });
+
+  /* ========================================================================
+     9. Individual Product Detail Page Controller
+     ======================================================================== */
+  const pdpMain = document.querySelector('[data-product-id]');
+  if (pdpMain) {
+    const prod = getProduct(pdpMain.dataset.productId);
+    if (prod) {
+      let selectedVariant = prod.variants[0];
+      let pdpQty = 1;
+      const qtySpan = document.getElementById('pdpQtyVal');
+      const waBtn = document.getElementById('pdpWaBtn');
+
+      const syncPdpWa = () => {
+        if (!waBtn) return;
+        const msg = `Hello Benue Food Global, I would like to order:\n• ${pdpQty}x ${prod.name} (${selectedVariant})\nPlease share current farm-direct invoice and pickup/delivery options.`;
+        waBtn.href = `https://wa.me/${WHATSAPP_ORDERS}?text=${encodeURIComponent(msg)}`;
+      };
+
+      document.querySelectorAll('.pdp-variant-btn').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('.pdp-variant-btn').forEach((b) => {
+            b.classList.remove('is-active');
+            b.setAttribute('aria-pressed', 'false');
+          });
+          btn.classList.add('is-active');
+          btn.setAttribute('aria-pressed', 'true');
+          selectedVariant = btn.dataset.variant;
+          syncPdpWa();
+        });
+      });
+
+      document.getElementById('pdpQtyDec')?.addEventListener('click', () => {
+        pdpQty = Math.max(1, pdpQty - 1);
+        if (qtySpan) qtySpan.textContent = String(pdpQty);
+        syncPdpWa();
+      });
+
+      document.getElementById('pdpQtyInc')?.addEventListener('click', () => {
+        pdpQty += 1;
+        if (qtySpan) qtySpan.textContent = String(pdpQty);
+        syncPdpWa();
+      });
+
+      document.getElementById('pdpAddBtn')?.addEventListener('click', () => {
+        addToCart(prod.id, selectedVariant, pdpQty, true);
+      });
+
+      const relGrid = document.getElementById('pdpRelatedGrid');
+      if (relGrid) {
+        const others = PRODUCTS.filter((p) => p.id !== prod.id).slice(0, 3);
+        relGrid.innerHTML = others.map((p) => `
+          <article class="bs-card">
+            <a href="${p.url}" class="bs-card__band" style="text-decoration:none;">
+              <span class="bs-card__kicker">${p.badge}</span>
+              <h3 class="bs-card__title">${p.name}</h3>
+            </a>
+            <a href="${p.url}" class="bs-card__media">
+              <img src="${p.image}" alt="${p.name}" />
+            </a>
+            <div class="bs-card__pricing">
+              <span class="pill-badge">${p.variants[0]}</span>
+              <div class="bs-card__sub" style="margin-top:6px;">${p.highlights}</div>
+            </div>
+            <a class="btn btn-dark btn-block bs-card__cta" href="${p.url}">View Product</a>
+          </article>
+        `).join('');
+      }
+
+      syncPdpWa();
+    }
+  }
 
   renderCart();
 })();
