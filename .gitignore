@@ -1,0 +1,8 @@
+# Exclude unrelated local demo/client files from Vercel deployment repo
+*.pdf
+pailap-*
+PAILAP_*
+standalone.html
+WhatsApp Image*
+.DS_Store
+Thumbs.db
