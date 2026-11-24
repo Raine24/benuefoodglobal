@@ -249,26 +249,56 @@
   const searchResults = document.getElementById('searchResults');
 
   function closeAllMenus() {
-    megaTriggers.forEach((btn) => btn.setAttribute('aria-expanded', 'false'));
+    document.querySelectorAll('[data-mega], [data-mega-hover]').forEach((btn) => btn.setAttribute('aria-expanded', 'false'));
     megaPanels.forEach((panel) => panel.classList.remove('is-open'));
     searchOverlay?.classList.remove('is-open');
     searchToggleBtn?.setAttribute('aria-expanded', 'false');
     pageBackdrop?.classList.remove('is-visible');
   }
 
+  function openMegaPanel(id) {
+    const panel = document.getElementById(`mega-${id}`);
+    if (!panel) return;
+    closeAllMenus();
+    document.querySelectorAll(`[data-mega="${id}"], [data-mega-hover="${id}"]`).forEach((el) => {
+      el.setAttribute('aria-expanded', 'true');
+    });
+    panel.classList.add('is-open');
+    pageBackdrop?.classList.add('is-visible');
+  }
+
+  let megaHoverTimer = null;
+  function scheduleCloseMega() {
+    clearTimeout(megaHoverTimer);
+    megaHoverTimer = setTimeout(() => {
+      if (!document.querySelector('[data-mega-hover]:hover, .mega-menu.is-open:hover, [data-mega]:hover')) {
+        closeAllMenus();
+      }
+    }, 170);
+  }
+
   megaTriggers.forEach((btn) => {
     btn.addEventListener('click', (e) => {
       e.stopPropagation();
-      const targetId = `mega-${btn.dataset.mega}`;
-      const panel = document.getElementById(targetId);
+      const id = btn.dataset.mega;
+      const panel = document.getElementById(`mega-${id}`);
       const isAlreadyOpen = panel?.classList.contains('is-open');
       closeAllMenus();
-      if (!isAlreadyOpen && panel) {
-        btn.setAttribute('aria-expanded', 'true');
-        panel.classList.add('is-open');
-        pageBackdrop?.classList.add('is-visible');
-      }
+      if (!isAlreadyOpen && panel) openMegaPanel(id);
     });
+  });
+
+  document.querySelectorAll('[data-mega-hover]').forEach((link) => {
+    const id = link.dataset.megaHover;
+    const panel = document.getElementById(`mega-${id}`);
+    const parentItem = link.closest('.nav-item');
+    parentItem?.addEventListener('mouseenter', () => {
+      clearTimeout(megaHoverTimer);
+      openMegaPanel(id);
+    });
+    parentItem?.addEventListener('mouseleave', scheduleCloseMega);
+    panel?.addEventListener('mouseenter', () => clearTimeout(megaHoverTimer));
+    panel?.addEventListener('mouseleave', scheduleCloseMega);
   });
 
   searchToggleBtn?.addEventListener('click', (e) => {
@@ -298,7 +328,7 @@
     ).slice(0, 5);
 
     if (matches.length === 0) {
-      searchResults.innerHTML = `<div style="padding:10px 14px;color:var(--color-ink-muted);">No matching products found. Try "Rice", "Honey", "Beans", "Garri", "Yam", or "Palm Oil".</div>`;
+      searchResults.innerHTML = `<div style="padding:10px 14px;color:var(--color-ink-muted);">No matching products found. Try "Rice", "Garri", "Yam", "Palm Oil", or "Honey".</div>`;
       return;
     }
 
