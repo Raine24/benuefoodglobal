@@ -304,12 +304,21 @@
               <input class="form-control" id="supQty" placeholder="e.g. 100 bags (50kg) monthly or one-off harvest batch" />
             </div>
             <div class="form-field">
-              <label for="supCondition">Product Condition / Grade &amp; Photo Notes</label>
-              <input class="form-control" id="supCondition" placeholder="Dryness, grade, packaging status (share photos via WhatsApp on submission)" />
+              <label for="supCondition">Product Condition / Grade</label>
+              <input class="form-control" id="supCondition" placeholder="e.g. Dry, sorted, moisture level, grade or packaging status" />
+            </div>
+            <div class="form-field">
+              <label for="supPhotos">Product Photographs (Optional, where appropriate)</label>
+              <input class="form-control" id="supPhotos" type="file" accept="image/*" multiple style="padding:8px;" />
+              <div style="font-size:0.78rem;color:var(--color-ink-muted);margin-top:4px;">Attach sample produce images or share directly in the WhatsApp thread after submitting.</div>
             </div>
             <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;">
               <div class="form-field"><label for="supPrice">Expected Price / Quotation</label><input class="form-control" id="supPrice" placeholder="Unit rate or negotiable" /></div>
-              <div class="form-field"><label for="supDate">Availability Date &amp; Notes</label><input class="form-control" id="supDate" placeholder="Ready now / Harvest date" /></div>
+              <div class="form-field"><label for="supDate">Availability Date</label><input class="form-control" id="supDate" placeholder="Ready now / Harvest date" /></div>
+            </div>
+            <div class="form-field">
+              <label for="supComments">Additional Comments</label>
+              <textarea class="form-control" id="supComments" rows="2" placeholder="Storage location, transport options, minimum order, or extra notes..."></textarea>
             </div>
             <div id="supplierStatus" aria-live="polite" style="margin-bottom:12px;"></div>
             <button class="btn btn-dark btn-block" type="submit">BECOME A SUPPLIER — SUBMIT REGISTRATION</button>

@@ -980,8 +980,13 @@
     const products = document.getElementById('supProducts')?.value.trim();
     const qty = document.getElementById('supQty')?.value.trim();
     const condition = document.getElementById('supCondition')?.value.trim();
+    const photoFiles = document.getElementById('supPhotos')?.files;
+    const photoNames = photoFiles && photoFiles.length > 0
+      ? Array.from(photoFiles).map((f) => f.name).join(', ')
+      : 'Will share via WhatsApp if requested';
     const quote = document.getElementById('supPrice')?.value.trim();
     const date = document.getElementById('supDate')?.value.trim();
+    const comments = document.getElementById('supComments')?.value.trim();
     const status = document.getElementById('supplierStatus');
     if (!status) return;
     if (!name || !phone || !location || !products) {
@@ -989,7 +994,7 @@
       return;
     }
     const msg = encodeURIComponent(
-      `BFG Supplier Registration\nName/Business: ${name}\nPhone/WhatsApp: ${phone}\nEmail: ${email || 'N/A'}\nState & LGA: ${location}\nProducts: ${products}\nQuantity & Frequency: ${qty || 'N/A'}\nCondition/Grade: ${condition || 'N/A'}\nExpected Quote: ${quote || 'N/A'}\nAvailability Date: ${date || 'N/A'}`
+      `BFG Supplier Registration\nName/Business: ${name}\nPhone/WhatsApp: ${phone}\nEmail: ${email || 'N/A'}\nState & LGA: ${location}\nProducts: ${products}\nQuantity & Frequency: ${qty || 'N/A'}\nCondition/Grade: ${condition || 'N/A'}\nPhotographs: ${photoNames}\nExpected Price/Quotation: ${quote || 'N/A'}\nAvailability Date: ${date || 'N/A'}\nAdditional Comments: ${comments || 'N/A'}`
     );
     status.innerHTML = `<div class="form-status form-status--success">Supplier submission ready. <div style="margin-top:8px;"><a class="btn btn-dark" href="https://wa.me/${WHATSAPP_ORDERS}?text=${msg}" target="_blank" rel="noopener">Send Supplier Application on WhatsApp</a></div></div>`;
   });
