@@ -52,9 +52,9 @@
       <nav class="desktop-nav" aria-label="Primary Navigation">
         <ul class="nav-list">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item">
-            <button class="nav-link" type="button" data-mega="shop" aria-expanded="false" aria-controls="mega-shop">
-              <span>Products</span>
+          <li class="nav-item" style="display:inline-flex;align-items:center;">
+            <a class="nav-link" href="shop.html" data-mega-hover="shop">Products</a>
+            <button class="nav-link" type="button" data-mega="shop" aria-label="Toggle Products submenu" aria-expanded="false" aria-controls="mega-shop" style="padding:8px 3px;">
               <svg class="icon-caret" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 4l4 4 4-4"/></svg>
             </button>
           </li>
@@ -99,37 +99,44 @@
       </div>
     </div>
 
-    <!-- Mega Menu: Products -->
+    <!-- Mega Menu: Products (Only the 5 Official Products) -->
     <div class="mega-menu" id="mega-shop" role="region" aria-label="Products menu">
-      <div class="page-width mega-menu-grid">
-        <a class="mega-card" href="shop.html">
-          <img src="assets/client-food-bundle.jpg" alt="Benue Food Global Official Product Catalogue" style="object-fit:contain;background:#ffffff;" />
+      <div class="page-width mega-menu-grid--5">
+        <a class="mega-card" href="local-rice.html">
+          <img src="assets/product-rice-gen.png" alt="Benue Food Global Rice" />
           <div class="mega-card__body">
-            <h3 class="mega-card__title">All Products</h3>
-            <p class="mega-card__sub">Rice, Garri, Yam, Palm Oil &amp; Honey (when available)</p>
+            <h3 class="mega-card__title">Rice</h3>
+            <p class="mega-card__sub">25kg &amp; 50kg packs (Subject to availability)</p>
           </div>
         </a>
-        <a class="mega-card" href="shop.html?cat=grains">
-          <img src="assets/product-rice-gen.png" alt="Benue Food Global Rice, Garri and Yam" />
+        <a class="mega-card" href="benue-garri.html">
+          <img src="assets/product-garri-gen.png" alt="Benue Food Global Garri" />
           <div class="mega-card__body">
-            <h3 class="mega-card__title">Rice, Garri &amp; Yam</h3>
-            <p class="mega-card__sub">25kg &amp; 50kg Rice packs and staples (subject to availability)</p>
+            <h3 class="mega-card__title">Garri</h3>
+            <p class="mega-card__sub">Retail &amp; bulk packs (Request a quote)</p>
           </div>
         </a>
-        <a class="mega-card" href="shop.html?cat=honey-oil">
-          <img src="assets/client-honey-flyer.jpg" alt="Benue Food Global Palm Oil and Honey" style="object-fit:contain;background:#f7f2e7;" />
+        <a class="mega-card" href="yam-flour.html">
+          <img src="assets/product-yam-flour-gen.png" alt="Benue Food Global Yam" />
           <div class="mega-card__body">
-            <h3 class="mega-card__title">Palm Oil &amp; Honey</h3>
-            <p class="mega-card__sub">Palm oil &amp; seasonal honey (listed when available)</p>
+            <h3 class="mega-card__title">Yam</h3>
+            <p class="mega-card__sub">Yam &amp; yam flour (Request a quote)</p>
           </div>
         </a>
-        <button class="mega-card" type="button" data-open-modal="basketModal" style="text-align:left;cursor:pointer;">
-          <img src="assets/product-garri-gen.png" alt="Build a Custom Quote Basket" />
+        <a class="mega-card" href="palm-oil.html">
+          <img src="assets/product-palm-oil-gen.png" alt="Benue Food Global Palm Oil" />
           <div class="mega-card__body">
-            <h3 class="mega-card__title">Build a Quote Basket</h3>
-            <p class="mega-card__sub">Select items &amp; request current pricing and availability</p>
+            <h3 class="mega-card__title">Palm Oil</h3>
+            <p class="mega-card__sub">Retail &amp; commercial container sizes</p>
           </div>
-        </button>
+        </a>
+        <a class="mega-card" href="pure-honey.html">
+          <img src="assets/client-honey-flyer.jpg" alt="Benue Food Global Natural Honey" style="object-fit:contain;background:#f7f2e7;" />
+          <div class="mega-card__body">
+            <h3 class="mega-card__title">Honey</h3>
+            <p class="mega-card__sub">Listed when harvest batches are available</p>
+          </div>
+        </a>
       </div>
     </div>
 

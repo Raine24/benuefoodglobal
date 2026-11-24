@@ -716,6 +716,16 @@ h1, h2, h3, h4 {
   line-height: 1.4;
 }
 
+.mega-menu-grid--5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+
+.mega-menu-grid--5 .mega-card img {
+  height: 136px;
+}
+
 .mega-menu-grid--6 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
