@@ -454,26 +454,15 @@
 
     shopGrid.innerHTML = filtered.map((p) => `
       <article class="bs-card ${p.id === 'basket-family' ? 'is-featured' : ''}">
-        <a href="${p.url}" class="bs-card__band" style="text-decoration:none;">
-          <span class="bs-card__kicker">${p.badge}</span>
-          <h2 class="bs-card__title">${p.name}</h2>
-        </a>
-        <a href="${p.url}" class="bs-card__media" aria-label="View ${p.name} details">
+        <a href="${p.url}" class="bs-card__media" aria-label="View ${p.name}">
           <img src="${p.image}" onerror="this.onerror=null;this.src='${p.fallbackImage || 'assets/client-food-bundle.jpg'}'" alt="${p.name}" />
         </a>
-        <div class="bs-card__pricing">
-          <span class="pill-badge">Request a Quote</span>
-          <div class="bs-card__sub" style="margin-top:4px;">${p.highlights}</div>
-          <div class="bs-card__divider"></div>
-          <label for="var-${p.id}" style="font-size:0.8rem;font-weight:700;">Select Pack / Size</label>
-          <select class="variant-select" id="var-${p.id}">
-            ${p.variants.map((v) => `<option value="${v}">${v}</option>`).join('')}
-          </select>
-          <div class="bs-card__shipping">✓ Subject to stock availability · Focus markets: Benue, Abuja &amp; Lagos</div>
-        </div>
-        <div style="display:grid;gap:8px;margin-top:12px;">
-          <button class="btn btn-dark btn-block" type="button" data-shop-add="${p.id}">Add to Quote Basket</button>
-          <a class="btn btn-light btn-block" href="${p.url}">View Product Page</a>
+        <div class="bs-card__pricing" style="justify-content:space-between;padding:16px 14px;gap:8px;">
+          <a href="${p.url}" style="text-decoration:none;">
+            <h2 class="bs-card__title" style="margin:0 0 4px;">${p.name}</h2>
+            <div class="bs-card__sub">${p.pack}</div>
+          </a>
+          <button class="btn btn-dark btn-block" type="button" data-shop-add="${p.id}" style="margin-top:6px;">Request a Quote</button>
         </div>
       </article>
     `).join('');
@@ -481,8 +470,8 @@
     shopGrid.querySelectorAll('[data-shop-add]').forEach((btn) => {
       btn.addEventListener('click', () => {
         const id = btn.dataset.shopAdd;
-        const sel = document.getElementById(`var-${id}`);
-        addToCart(id, sel ? sel.value : getProduct(id).variants[0], 1);
+        const prod = getProduct(id);
+        addToCart(id, prod.variants[0], 1);
       });
     });
   }
@@ -1143,18 +1132,16 @@
         const others = PRODUCTS.filter((p) => p.id !== prod.id).slice(0, 3);
         relGrid.innerHTML = others.map((p) => `
           <article class="bs-card">
-            <a href="${p.url}" class="bs-card__band" style="text-decoration:none;">
-              <span class="bs-card__kicker">${p.badge}</span>
-              <h3 class="bs-card__title">${p.name}</h3>
-            </a>
-            <a href="${p.url}" class="bs-card__media">
+            <a href="${p.url}" class="bs-card__media" aria-label="View ${p.name}">
               <img src="${p.image}" alt="${p.name}" />
             </a>
-            <div class="bs-card__pricing">
-              <span class="pill-badge">${p.variants[0]}</span>
-              <div class="bs-card__sub" style="margin-top:6px;">${p.highlights}</div>
+            <div class="bs-card__pricing" style="justify-content:space-between;padding:16px 14px;gap:8px;">
+              <a href="${p.url}" style="text-decoration:none;">
+                <h3 class="bs-card__title" style="margin:0 0 4px;">${p.name}</h3>
+                <div class="bs-card__sub">${p.pack}</div>
+              </a>
+              <a class="btn btn-dark btn-block" href="${p.url}" style="margin-top:6px;">View Product</a>
             </div>
-            <a class="btn btn-dark btn-block bs-card__cta" href="${p.url}">View Product</a>
           </article>
         `).join('');
       }
