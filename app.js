@@ -230,7 +230,10 @@
     });
     if (handUnderline) observer.observe(handUnderline);
     window.addEventListener('scroll', revealVisibleAos, { passive: true });
+    window.addEventListener('load', revealVisibleAos, { passive: true });
+    revealVisibleAos();
     requestAnimationFrame(() => revealVisibleAos());
+    setTimeout(revealVisibleAos, 120);
   } else {
     aosEls.forEach((el) => el.classList.add('aos-animate'));
     handUnderline?.classList.add('in-view');

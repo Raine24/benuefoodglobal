@@ -2797,7 +2797,13 @@ body.overlay-open .back-to-top {
    ========================================================================== */
 .pdp-section {
   background: var(--color-bg-primary);
-  padding: 36px 0 64px;
+  padding: 24px 0 48px;
+}
+
+@media (min-width: 900px) {
+  .pdp-section {
+    padding: 36px 0 64px;
+  }
 }
 
 .pdp-breadcrumbs {
@@ -2807,7 +2813,7 @@ body.overlay-open .back-to-top {
   gap: 8px;
   font-size: 0.88rem;
   color: var(--color-ink-muted);
-  margin-bottom: 24px;
+  margin-bottom: 18px;
 }
 
 .pdp-breadcrumbs a {
@@ -2821,14 +2827,14 @@ body.overlay-open .back-to-top {
 
 .pdp-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 28px;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 24px;
   align-items: start;
 }
 
 @media (min-width: 900px) {
   .pdp-grid {
-    grid-template-columns: 1.05fr 0.95fr;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
     gap: 48px;
   }
 }
@@ -2837,30 +2843,54 @@ body.overlay-open .back-to-top {
   background: var(--color-bg-raised);
   border: 1px solid var(--color-border-subtle);
   border-radius: var(--radius-xl);
-  padding: 20px;
+  padding: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: var(--shadow-card);
+  min-width: 0;
+  width: 100%;
+}
+
+@media (min-width: 900px) {
+  .pdp-media-stage {
+    padding: 20px;
+  }
 }
 
 .pdp-media-stage img {
   width: 100%;
-  max-height: 540px;
+  max-height: 360px;
   object-fit: contain;
   border-radius: var(--radius-lg);
+}
+
+@media (min-width: 900px) {
+  .pdp-media-stage img {
+    max-height: 540px;
+  }
 }
 
 .pdp-info {
   display: flex;
   flex-direction: column;
   gap: 14px;
+  min-width: 0;
+  width: 100%;
+  overflow-wrap: anywhere;
+}
+
+.pdp-info .pill-badge {
+  white-space: normal;
+  text-align: left;
+  line-height: 1.3;
+  max-width: 100%;
 }
 
 .pdp-title {
-  font-size: clamp(1.9rem, 3.2vw, 2.7rem);
+  font-size: clamp(1.85rem, 3.2vw, 2.7rem);
   margin: 0;
-  line-height: 1.1;
+  line-height: 1.12;
 }
 
 .pdp-lead {
@@ -2874,17 +2904,19 @@ body.overlay-open .back-to-top {
   display: grid;
   gap: 8px;
   margin-top: 4px;
+  min-width: 0;
 }
 
 .pdp-variant-pills {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  min-width: 0;
 }
 
 .pdp-variant-btn {
-  min-height: 42px;
-  padding: 8px 16px;
+  min-height: 44px;
+  padding: 10px 16px;
   border-radius: var(--radius-pill);
   border: 1.5px solid var(--color-border-subtle);
   background: var(--color-bg-raised);
@@ -2892,8 +2924,17 @@ body.overlay-open .back-to-top {
   font-weight: 600;
   font-size: 0.88rem;
   cursor: pointer;
-  white-space: nowrap;
+  white-space: normal;
+  text-align: center;
+  line-height: 1.3;
+  max-width: 100%;
   transition: background-color var(--dur-fast) ease, border-color var(--dur-fast) ease, color var(--dur-fast) ease;
+}
+
+@media (max-width: 560px) {
+  .pdp-variant-btn {
+    width: 100%;
+  }
 }
 
 .pdp-variant-btn:hover {
@@ -2912,6 +2953,18 @@ body.overlay-open .back-to-top {
   gap: 12px;
   align-items: center;
   margin-top: 6px;
+  width: 100%;
+}
+
+.pdp-buy-row .btn {
+  min-width: 0 !important;
+  flex: 1 1 180px;
+}
+
+.pdp-info .btn-block {
+  white-space: normal;
+  text-align: center;
+  line-height: 1.3;
 }
 
 .pdp-qty-box {
@@ -2922,6 +2975,7 @@ body.overlay-open .back-to-top {
   background: var(--color-bg-raised);
   overflow: hidden;
   min-height: 48px;
+  flex-shrink: 0;
 }
 
 .pdp-qty-box button {
@@ -2946,8 +3000,9 @@ body.overlay-open .back-to-top {
   border-radius: var(--radius-lg);
   padding: 16px 18px;
   display: grid;
-  gap: 6px;
+  gap: 8px;
   font-size: 0.94rem;
+  overflow-wrap: anywhere;
 }
 
 .pdp-specs-list {
@@ -2956,11 +3011,20 @@ body.overlay-open .back-to-top {
   display: grid;
   gap: 6px;
   color: var(--color-ink-muted);
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 749px) {
+  .pdp-specs-list,
+  .pdp-trust-box {
+    font-size: 0.98rem;
+    line-height: 1.6;
+  }
 }
 
 .pdp-related-section {
   background: var(--color-bg-lavender-soft);
-  padding: 58px 0;
+  padding: 48px 0;
 }
 
 /* ==========================================================================
