@@ -14,135 +14,116 @@
     {
       id: 'basket-family',
       url: 'family-basket.html',
-      name: 'Family Staple Basket (5 Products)',
+      name: 'BFG Staple Food Bundle',
       category: 'bundles',
-      pack: 'Rice 10kg/5kg + Beans 5kg + Garri 2kg + Yam Flour 1kg + Palm Oil 1L',
-      variants: ['Standard Household Basket (5 Packs)', 'Large Family Basket (10kg Rice + Extras)', 'Custom Bulk Carton'],
-      badge: 'Direct Farm Bundle',
-      highlights: 'Complete Benue kitchen essentials packed fresh',
-      description: 'Our signature Benue Food Global household bundle combining Nigeria’s finest farm staples straight from Benue State — clean stone-free Local Rice, sorted Honey Beans, crispy Garri, smooth Yam Flour, and unadulterated Palm Oil in one convenient order.',
+      pack: 'Mixed BFG Food Products • Subject to Availability',
+      variants: ['Retail Household Bundle (Request Quote)', 'Bulk / Institutional Supply (Request Quote)'],
+      badge: 'Request a Quote',
+      highlights: 'Curated mix of available BFG staples sourced from Benue State',
+      description: 'A combined selection of BENUE FOOD GLOBAL agricultural products sourced from Benue State, subject to current stock availability. Contact our order desk for available pack combinations and current pricing.',
       features: [
-        'Eliminates multiple market trips and middleman markups',
-        'Every staple sorted, cleaned, and sealed at our Benue Head Office',
-        'Ideal for families, gifting, staff hampers, and bulk restocks',
-        'Ready for pickup in Benue, Lagos & Abuja or nationwide delivery'
+        'Sourced from farmers and trusted agricultural suppliers in Benue State',
+        'Condition-checked, sorted, and packed to match order requirements',
+        'Suitable for households, retailers, food vendors, and institutional buyers',
+        'Current pricing and delivery arrangements confirmed upon enquiry'
       ],
       image: 'assets/client-food-bundle.jpg',
-      tags: 'bundle basket rice beans garri yam flour palm oil'
+      tags: 'bundle basket rice garri yam palm oil honey'
     },
     {
       id: 'rice-5kg',
       url: 'local-rice.html',
-      name: 'Nigerian Local Rice',
+      name: 'Rice',
       category: 'grains',
-      pack: '100% Natural • Clean • Stone Free',
-      variants: ['5kg Sealed Pouch', '10kg Family Bag', '50kg Wholesale Bag'],
-      badge: '100% Stone Free',
-      highlights: 'Directly sourced from trusted Benue rice mills',
-      description: 'Naturally grown Benue paddy rice, expertly parboiled, de-stoned, polished, and sorted so every grain cooks clean, fluffy, and aromatic — with zero stones and zero artificial additives.',
+      pack: '25kg & 50kg Packs • Subject to Availability',
+      variants: ['25kg Pack (Subject to availability)', '50kg Pack (Subject to availability)'],
+      badge: '25kg & 50kg',
+      highlights: 'Nigerian rice sourced and packaged in 25kg & 50kg sacks',
+      description: 'BENUE FOOD GLOBAL supplies Nigerian rice sourced from trusted producers and mills in Benue State, checked for product condition and packaged in 25kg and 50kg sizes subject to actual availability.',
       features: [
-        '100% natural, clean, and stone-free Benue rice',
-        'Hygienically processed and moisture-sealed for long shelf life',
-        'Rich natural aroma for jollof, fried rice, and everyday meals',
-        'Available in 5kg, 10kg, and 50kg wholesale sacks'
+        'Pack sizes: 25kg and 50kg, subject to actual availability',
+        'Inspected against agreed product condition requirements before dispatch',
+        'Available for retail enquiries and bulk supply quotations',
+        'Request a quote for today’s stock status and current pricing'
       ],
       image: 'assets/product-rice-gen.png',
-      tags: 'rice local stone free grain 5kg 10kg 50kg'
-    },
-    {
-      id: 'honey-500',
-      url: 'pure-honey.html',
-      name: 'Benue Pure Honey',
-      category: 'honey-oil',
-      pack: '100% Original • No Dilution • No Additives',
-      variants: ['500ml Hygiene Jar', '1 Litre Family Jar', '5 Litre Bulk Jerrycan'],
-      badge: '100% Unadulterated',
-      highlights: 'Raw hive honey rich in natural nutrients',
-      description: 'Our honey is 100% natural, harvested from healthy Benue hives and carefully strained to preserve every drop of nature’s goodness. No dilution. No sugar syrups. No additives — just pure, raw, wholesome honey.',
-      features: [
-        '100% Pure & Natural — zero dilution, zero preservatives',
-        'Rich in natural vitamins, minerals, enzymes, and antioxidants',
-        'Supports everyday wellness and natural immunity for the whole family',
-        'Tamper-sealed hygiene jars and bulk containers'
-      ],
-      image: 'assets/client-honey-flyer.jpg',
-      tags: 'honey pure raw natural 500ml 1l'
-    },
-    {
-      id: 'beans-5kg',
-      url: 'honey-beans.html',
-      name: 'Benue Honey Beans',
-      category: 'grains',
-      pack: 'Cleanly Sorted • Naturally Grown',
-      variants: ['5kg Sealed Bag', '10kg Family Bag', '50kg / 100kg Bulk Sack'],
-      badge: 'Clean & Sorted',
-      highlights: 'Sweet cooking honey beans straight from Benue farms',
-      description: 'Sweet, fast-cooking Benue brown honey beans, hand-sorted and cleaned to remove chaff and grit before hygienic sealing. Rich in plant protein for porridge, moi-moi, akara, and rice & beans.',
-      features: [
-        'Cleanly picked and sorted with zero debris',
-        'Fast-cooking, naturally sweet Benue honey beans',
-        'Hygienically sealed against weevils and moisture',
-        'Available for households (5kg/10kg) and bulk buyers (50kg/100kg)'
-      ],
-      image: 'assets/product-beans-gen.png',
-      tags: 'beans honey oloyin brown 5kg 10kg'
+      tags: 'rice 25kg 50kg grains local nigerian'
     },
     {
       id: 'garri-2kg',
       url: 'benue-garri.html',
-      name: 'Crispy Benue Garri',
+      name: 'Garri',
       category: 'grains',
-      pack: 'Hygienically Processed • Sealed Fresh',
-      variants: ['2kg Sealed Pouch', '5kg Family Bag', '50kg Wholesale Sack'],
-      badge: '100% Natural',
-      highlights: 'Crisp, clean Benue cassava garri ready for soaking or eba',
-      description: 'Freshly roasted from Benue-grown cassava tubers with balanced natural fermentation, zero sand, and crisp dry texture — perfect for drinking cold or making smooth, lump-free eba.',
+      pack: 'Multiple Pack Sizes • Subject to Availability',
+      variants: ['Retail Pack (Request availability)', 'Bulk Sack (Request Quote)'],
+      badge: 'Request a Quote',
+      highlights: 'Sourced, inspected, and packaged for households & bulk buyers',
+      description: 'Cleanly sourced Nigerian garri aggregated from trusted producers and markets, checked for suitability and prepared in packaging sizes based on product availability and buyer demand.',
       features: [
-        '100% natural Benue cassava with clean, sand-free roasting',
-        'Crisp golden texture and authentic sour-sweet balance',
-        'Sealed immediately after cooling to lock in freshness',
-        'Available in 2kg, 5kg, and 50kg wholesale bags'
+        'Sourced from trusted producers and agricultural suppliers',
+        'Checked for condition and suitability prior to packaging',
+        'Available for household, retail, and wholesale enquiries',
+        'Contact us for current varieties, pack sizes, and pricing'
       ],
       image: 'assets/product-garri-gen.png',
-      tags: 'garri cassava golden white 2kg 5kg'
+      tags: 'garri cassava grains'
     },
     {
       id: 'yam-flour-1kg',
       url: 'yam-flour.html',
-      name: 'Benue Yam Flour (Elubo)',
+      name: 'Yam',
       category: 'grains',
-      pack: 'Smooth Milled • Hygienically Packaged',
-      variants: ['1kg Sealed Pouch', '5kg Family Pack', '25kg Bulk Sack'],
-      badge: '100% Pure Yam',
-      highlights: 'Made from premium Benue yams with zero fillers',
-      description: 'Milled solely from mature Benue white yams — Nigeria’s acclaimed yam capital — dried hygienically and finely sieved into smooth, pure yam flour with zero cassava fillers or artificial colouring.',
+      pack: 'Yam & Yam Flour • Subject to Availability',
+      variants: ['Whole Yam / Unit Supply (Request Quote)', 'Packaged Yam Flour (Request availability)'],
+      badge: 'Request a Quote',
+      highlights: 'Benue yam supply quoted by type, size, and availability',
+      description: 'BENUE FOOD GLOBAL coordinates sourcing and aggregation of Benue yam and yam-based supply directly with agricultural producers, checked and prepared according to agreed buyer specifications and seasonal availability.',
       features: [
-        '100% pure Benue yam — zero cheap starch fillers',
-        'Finely milled and sieved for silky, lump-free amala',
-        'Hygienically dried and moisture-locked in food-grade pouches',
-        'Available in 1kg, 5kg, and 25kg catering packs'
+        'Sourced from Benue State’s agricultural producing communities',
+        'Quoted by type, size, and unit quantity upon enquiry',
+        'Condition-checked and prepared for transport to served markets',
+        'Suitable for households, food vendors, retailers, and bulk buyers'
       ],
       image: 'assets/product-yam-flour-gen.png',
-      tags: 'yam flour elubo amala 1kg 5kg'
+      tags: 'yam elubo flour tubers benue'
     },
     {
       id: 'palm-oil-1l',
       url: 'palm-oil.html',
-      name: 'Pure Benue Palm Oil',
+      name: 'Palm Oil',
       category: 'honey-oil',
-      pack: 'Unadulterated Red Palm Oil • Leak-Proof',
-      variants: ['1 Litre Sealed Bottle', '5 Litre Gallon', '25 Litre Wholesale Keg'],
-      badge: 'No Dyes • Natural',
-      highlights: 'Rich, thick red palm oil sourced straight from local mills',
-      description: 'Cold-pressed, rich deep-red Benue palm oil sourced straight from trusted local oil mills — 100% natural with zero artificial Sudan dyes, zero bleaching, and low free fatty acid for clean aroma.',
+      pack: 'Bottles & Bulk Containers • Subject to Availability',
+      variants: ['Retail Container (Request availability)', 'Bulk Jerrycan (Request Quote)'],
+      badge: 'Request a Quote',
+      highlights: 'Packaged Nigerian palm oil for retail and bulk buyers',
+      description: 'Nigerian palm oil sourced from trusted agricultural suppliers, inspected for quality and condition, and prepared in sealed containers sized to buyer requirements and current stock availability.',
       features: [
-        '100% unadulterated red palm oil — zero Sudan dye or adulterants',
-        'Rich natural aroma and vibrant colour for soups and stews',
-        'Double-sealed tamper-proof 1L bottles and 5L/25L kegs for safe transit',
-        'Direct farm-gate sourcing from Benue milling cooperatives'
+        'Sourced from trusted agricultural oil suppliers',
+        'Checked for condition and sealed in appropriate containers',
+        'Available for household orders and food-vendor bulk supply',
+        'Contact our order desk for current container sizes and pricing'
       ],
       image: 'assets/product-palm-oil-gen.png',
-      tags: 'palm oil red cooking 1l 5l 25l'
+      tags: 'palm oil cooking oil red'
+    },
+    {
+      id: 'honey-500',
+      url: 'pure-honey.html',
+      name: 'Honey',
+      category: 'honey-oil',
+      pack: 'Listed When Available • Container Sizes Vary',
+      variants: ['Check Current Availability (Request Quote)', 'Bulk Supply Enquiry'],
+      badge: 'When Available',
+      highlights: 'Listed when available — enquire for current container sizes',
+      description: 'Natural honey sourced through trusted suppliers and listed when in stock. Contact Benue Food Global to confirm current container sizes, availability status, and pricing before placing an order.',
+      features: [
+        'Listed strictly when genuine stock is available',
+        'Inspected and packaged in sealed containers',
+        'Available for retail or bulk enquiries subject to seasonal harvest',
+        'Message 08083690567 on WhatsApp to check current availability'
+      ],
+      image: 'assets/client-honey-flyer.jpg',
+      tags: 'honey pure natural seasonal'
     }
   ];
 
@@ -425,7 +406,7 @@
         </a>
         <div class="mini-sku__top" style="align-items:center;margin-top:4px;">
           <a href="${p.url}" class="mini-sku__pack" style="font-weight:700;color:var(--color-ink-lime);text-decoration:none;">View Product →</a>
-          <button class="btn btn-dark mini-sku__btn" type="button" data-add-id="${p.id}" data-variant="${p.variants[0]}">+ Add to Basket</button>
+          <button class="btn btn-dark mini-sku__btn" type="button" data-add-id="${p.id}" data-variant="${p.variants[0]}">+ Quote Basket</button>
         </div>
       </div>
     `).join('');
@@ -451,17 +432,17 @@
           <img src="${p.image}" onerror="this.onerror=null;this.src='${p.fallbackImage || 'assets/client-food-bundle.jpg'}'" alt="${p.name}" />
         </a>
         <div class="bs-card__pricing">
-          <span class="pill-badge">Direct From Benue Farms</span>
+          <span class="pill-badge">Request a Quote</span>
           <div class="bs-card__sub" style="margin-top:4px;">${p.highlights}</div>
           <div class="bs-card__divider"></div>
           <label for="var-${p.id}" style="font-size:0.8rem;font-weight:700;">Select Pack / Size</label>
           <select class="variant-select" id="var-${p.id}">
             ${p.variants.map((v) => `<option value="${v}">${v}</option>`).join('')}
           </select>
-          <div class="bs-card__shipping">✓ Benue HQ, Lagos &amp; Abuja pickup ready</div>
+          <div class="bs-card__shipping">✓ Subject to stock availability · Focus markets: Benue, Abuja &amp; Lagos</div>
         </div>
         <div style="display:grid;gap:8px;margin-top:12px;">
-          <button class="btn btn-dark btn-block" type="button" data-shop-add="${p.id}">Add to Order Basket</button>
+          <button class="btn btn-dark btn-block" type="button" data-shop-add="${p.id}">Add to Quote Basket</button>
           <a class="btn btn-light btn-block" href="${p.url}">View Product Page</a>
         </div>
       </article>
@@ -634,7 +615,7 @@
   }
 
   function buildWhatsAppOrderUrl(customerInfo = null) {
-    const lines = ['Hello Benue Food Global, I would like to place an order / request total & payment details:', ''];
+    const lines = ['Hello Benue Food Global, I would like to request a quote / enquire about availability:', ''];
     cart.forEach((item) => {
       const p = getProduct(item.id);
       if (p) lines.push(`• ${item.qty}x ${p.name} (${item.variant || p.variants[0]})`);
@@ -642,9 +623,9 @@
     if (customerInfo) {
       lines.push('', `Name: ${customerInfo.name}`);
       lines.push(`Phone: ${customerInfo.phone}`);
-      lines.push(`Pickup / Delivery: ${customerInfo.hub}`);
-      if (customerInfo.address) lines.push(`Address/Note: ${customerInfo.address}`);
-      lines.push(`Payment Preference: ${customerInfo.method}`);
+      lines.push(`Market / Hub: ${customerInfo.hub}`);
+      if (customerInfo.address) lines.push(`Delivery / Note: ${customerInfo.address}`);
+      lines.push(`Enquiry Preference: ${customerInfo.method}`);
     }
     return `https://wa.me/${WHATSAPP_ORDERS}?text=${encodeURIComponent(lines.join('\n'))}`;
   }
@@ -661,13 +642,13 @@
     if (cart.length === 0) {
       cartDrawerBody.innerHTML = `
         <div class="cart-empty">
-          <h3 style="margin-bottom:8px;">Your order basket is empty</h3>
-          <p style="color:var(--color-ink-muted);margin:0 0 20px;">Add stone-free Nigerian Local Rice, Pure Honey, Beans, Garri, Yam Flour, or Palm Oil direct from Benue State.</p>
-          <a class="btn btn-dark" href="shop.html">Browse Farm Products</a>
+          <h3 style="margin-bottom:8px;">Your quote basket is empty</h3>
+          <p style="color:var(--color-ink-muted);margin:0 0 20px;">Add Benue Food Global Rice, Garri, Yam, Palm Oil, Honey (when available), or our Staple Food Bundle to request current pricing and availability.</p>
+          <a class="btn btn-dark" href="shop.html">Browse Products</a>
         </div>
       `;
       cartDrawerFooter.innerHTML = `
-        <a class="btn btn-lime btn-block" href="https://wa.me/${WHATSAPP_ORDERS}?text=Hello%20Benue%20Food%20Global%2C%20I%20would%20like%20to%20place%20an%20order." target="_blank" rel="noopener">Order Directly via WhatsApp (08083690567)</a>
+        <a class="btn btn-lime btn-block" href="https://wa.me/${WHATSAPP_ORDERS}?text=Hello%20Benue%20Food%20Global%2C%20I%20would%20like%20to%20request%20a%20quote%20and%20check%20product%20availability." target="_blank" rel="noopener">Enquire via WhatsApp (08083690567)</a>
       `;
       return;
     }
@@ -689,7 +670,7 @@
             </div>
           </div>
           <div style="text-align:right;">
-            <div style="font-size:0.78rem;font-weight:700;color:var(--color-ink-lime);">Direct Quote</div>
+            <div style="font-size:0.78rem;font-weight:700;color:var(--color-ink-lime);">Request a Quote</div>
             <button type="button" data-cart-rem="${key}" style="border:0;background:transparent;font-size:0.78rem;color:var(--color-ink-muted);text-decoration:underline;cursor:pointer;margin-top:6px;">Remove</button>
           </div>
         </div>
@@ -701,9 +682,9 @@
         <span style="font-weight:600;">Total Items Selected</span>
         <strong style="font-size:1.1rem;">${totalCount} pack(s)</strong>
       </div>
-      <div style="font-size:0.8rem;color:var(--color-ink-muted);">Submit your order online to receive payment details &amp; dispatch confirmation, or order straight on WhatsApp.</div>
-      <button class="btn btn-dark btn-block" type="button" id="proceedCheckoutBtn">Submit Online Order &amp; Payment Request</button>
-      <a class="btn btn-lime btn-block" href="${buildWhatsAppOrderUrl()}" target="_blank" rel="noopener">Order This Basket on WhatsApp</a>
+      <div style="font-size:0.8rem;color:var(--color-ink-muted);">Orders, pricing, and delivery are confirmed by our order desk based on current stock availability.</div>
+      <button class="btn btn-dark btn-block" type="button" id="proceedCheckoutBtn">Submit Quote &amp; Order Enquiry</button>
+      <a class="btn btn-lime btn-block" href="${buildWhatsAppOrderUrl()}" target="_blank" rel="noopener">Send Quote Request on WhatsApp</a>
     `;
 
     document.getElementById('proceedCheckoutBtn')?.addEventListener('click', () => {
@@ -782,10 +763,10 @@
     }).join('');
 
     box.innerHTML = `
-      <div style="font-weight:700;margin-bottom:6px;">Order Summary (${cart.reduce((s, i) => s + i.qty, 0)} item(s))</div>
+      <div style="font-weight:700;margin-bottom:6px;">Quote &amp; Order Summary (${cart.reduce((s, i) => s + i.qty, 0)} item(s))</div>
       <div style="font-size:0.88rem;line-height:1.5;margin-bottom:8px;">${listHtml || 'No items selected yet.'}</div>
       <div style="font-size:0.84rem;color:var(--color-ink-muted);border-top:1px solid rgba(29,29,29,0.12);padding-top:6px;">
-        Destination: <strong>${hub}</strong> · Final farm-direct total &amp; payment invoice sent immediately on confirmation.
+        Market / Hub: <strong>${hub}</strong> · Focus markets: Benue State, Abuja &amp; Lagos. Current availability &amp; pricing confirmed by BFG desk.
       </div>
     `;
   }
@@ -841,10 +822,10 @@
 
       resultEl.innerHTML = `
         <div class="form-status form-status--success" style="margin-bottom:14px;">
-          <div><strong>Order Request Logged — Reference: ${ref}</strong></div>
-          <div style="font-weight:400;margin-top:4px;">Selected Hub: <strong>${hub}</strong> • Payment Preference: ${method}. Our Benue Food Global desk (08083690567) will confirm your invoice &amp; dispatch schedule shortly.</div>
+          <div><strong>Quote &amp; Order Enquiry Logged — Reference: ${ref}</strong></div>
+          <div style="font-weight:400;margin-top:4px;">Market / Hub: <strong>${hub}</strong> • Enquiry Type: ${method}. Contact BFG Order Desk on 08083690567 or click below to confirm current availability, pricing, and delivery options.</div>
           <div style="margin-top:10px;">
-            <a class="btn btn-dark" href="${waUrl}" target="_blank" rel="noopener" style="min-height:40px;padding:8px 16px;font-size:0.84rem;">Send Order Reference to WhatsApp</a>
+            <a class="btn btn-dark" href="${waUrl}" target="_blank" rel="noopener" style="min-height:40px;padding:8px 16px;font-size:0.84rem;">Send Enquiry Reference on WhatsApp</a>
           </div>
         </div>
       `;
@@ -853,7 +834,7 @@
       saveCart();
       renderCart();
       submitBtn.disabled = false;
-      submitBtn.textContent = 'Confirm Order & Request Payment';
+      submitBtn.textContent = 'Submit Quote & Order Enquiry';
     }, 450);
   });
 
@@ -969,6 +950,74 @@
 
   bindEnquiryForm('partnerForm', 'enqType', 'enqName', 'enqPhone', 'enqDetails', 'partnerStatus');
   bindEnquiryForm('pageEnquiryForm', 'pEnqType', 'pEnqName', 'pEnqPhone', 'pEnqDetails', 'pEnquiryStatus');
+
+  // Section 10: Supplier Registration Form (suppliers.html)
+  document.getElementById('supplierForm')?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const name = document.getElementById('supName')?.value.trim();
+    const phone = document.getElementById('supPhone')?.value.trim();
+    const email = document.getElementById('supEmail')?.value.trim();
+    const location = document.getElementById('supLocation')?.value.trim();
+    const products = document.getElementById('supProducts')?.value.trim();
+    const qty = document.getElementById('supQty')?.value.trim();
+    const condition = document.getElementById('supCondition')?.value.trim();
+    const quote = document.getElementById('supPrice')?.value.trim();
+    const date = document.getElementById('supDate')?.value.trim();
+    const status = document.getElementById('supplierStatus');
+    if (!status) return;
+    if (!name || !phone || !location || !products) {
+      status.innerHTML = `<div class="form-status form-status--error">Please fill in your name, phone/WhatsApp, State/LGA, and products available.</div>`;
+      return;
+    }
+    const msg = encodeURIComponent(
+      `BFG Supplier Registration\nName/Business: ${name}\nPhone/WhatsApp: ${phone}\nEmail: ${email || 'N/A'}\nState & LGA: ${location}\nProducts: ${products}\nQuantity & Frequency: ${qty || 'N/A'}\nCondition/Grade: ${condition || 'N/A'}\nExpected Quote: ${quote || 'N/A'}\nAvailability Date: ${date || 'N/A'}`
+    );
+    status.innerHTML = `<div class="form-status form-status--success">Supplier submission ready. <div style="margin-top:8px;"><a class="btn btn-dark" href="https://wa.me/${WHATSAPP_ORDERS}?text=${msg}" target="_blank" rel="noopener">Send Supplier Application on WhatsApp</a></div></div>`;
+  });
+
+  // Section 10: Partnership Application Form (wholesale.html)
+  document.getElementById('partnershipAppForm')?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const name = document.getElementById('partName')?.value.trim();
+    const phone = document.getElementById('partPhone')?.value.trim();
+    const email = document.getElementById('partEmail')?.value.trim();
+    const area = document.getElementById('partArea')?.value.trim();
+    const ptype = document.getElementById('partType')?.value;
+    const bg = document.getElementById('partBg')?.value.trim();
+    const facilities = document.getElementById('partFacilities')?.value.trim();
+    const proposal = document.getElementById('partProposal')?.value.trim();
+    const status = document.getElementById('partnershipAppStatus');
+    if (!status) return;
+    if (!name || !phone || !area || !proposal) {
+      status.innerHTML = `<div class="form-status form-status--error">Please complete name, phone, operating area, and short proposal.</div>`;
+      return;
+    }
+    const msg = encodeURIComponent(
+      `BFG Partnership Application (${ptype})\nApplicant: ${name}\nPhone: ${phone}\nEmail: ${email || 'N/A'}\nOperating Area: ${area}\nBackground: ${bg || 'N/A'}\nResources/Facilities: ${facilities || 'N/A'}\nProposal: ${proposal}`
+    );
+    status.innerHTML = `<div class="form-status form-status--success">Partnership application prepared for CEO review. <div style="margin-top:8px;"><a class="btn btn-dark" href="https://wa.me/${WHATSAPP_CEO}?text=${msg}" target="_blank" rel="noopener">Send Partnership Application to CEO (08133527937)</a></div></div>`;
+  });
+
+  // Section 11: Investment Enquiry Form (investment.html)
+  document.getElementById('investmentForm')?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const name = document.getElementById('invName')?.value.trim();
+    const org = document.getElementById('invOrg')?.value.trim();
+    const phone = document.getElementById('invPhone')?.value.trim();
+    const email = document.getElementById('invEmail')?.value.trim();
+    const focus = document.getElementById('invFocus')?.value;
+    const notes = document.getElementById('invNotes')?.value.trim();
+    const status = document.getElementById('investmentStatus');
+    if (!status) return;
+    if (!name || !phone || !notes) {
+      status.innerHTML = `<div class="form-status form-status--error">Please provide your name, contact number, and enquiry details.</div>`;
+      return;
+    }
+    const msg = encodeURIComponent(
+      `BFG Investment / Business Development Enquiry\nName: ${name}\nOrganisation: ${org || 'Individual'}\nPhone: ${phone}\nEmail: ${email || 'N/A'}\nFocus Area: ${focus}\nNotes: ${notes}`
+    );
+    status.innerHTML = `<div class="form-status form-status--success">Introductory discussion request prepared. <div style="margin-top:8px;"><a class="btn btn-dark" href="https://wa.me/${WHATSAPP_CEO}?text=${msg}" target="_blank" rel="noopener">Connect with CEO Office (08133527937)</a></div></div>`;
+  });
 
   document.getElementById('footerNewsletterForm')?.addEventListener('submit', (e) => {
     e.preventDefault();
