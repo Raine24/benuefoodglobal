@@ -844,6 +844,7 @@ h1, h2, h3, h4 {
 
 .hero-slides-track {
   display: flex;
+  align-items: stretch;
   transition: transform 600ms var(--ease-standard);
   will-change: transform;
 }
@@ -856,14 +857,21 @@ h1, h2, h3, h4 {
 
 @media (min-width: 900px) {
   .hero-slide {
-    grid-template-columns: 38% 62%;
-    height: clamp(580px, calc(100vh - 140px), 740px);
+    grid-template-columns: 46% 54%;
+    min-height: clamp(480px, calc(100vh - 190px), 660px);
+    height: auto;
+  }
+}
+
+@media (min-width: 1280px) {
+  .hero-slide {
+    grid-template-columns: 42% 58%;
   }
 }
 
 .hero-content-panel {
   background: var(--color-bg-lavender);
-  padding: 32px 54px 48px;
+  padding: 28px 56px 32px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -873,12 +881,12 @@ h1, h2, h3, h4 {
 
 @media (min-width: 900px) {
   .hero-content-panel {
-    padding: 36px 48px 56px;
+    padding: 36px 76px 36px;
   }
 }
 
 .hero-title {
-  font-size: clamp(1.9rem, 2.9vw, 2.85rem);
+  font-size: clamp(1.85rem, 2.7vw, 2.75rem);
   font-weight: 700;
   line-height: 1.08;
   margin-bottom: 12px;
@@ -894,15 +902,13 @@ h1, h2, h3, h4 {
   margin: 0 0 12px;
   color: var(--color-brown);
 }
-  color: var(--color-ink-primary);
-}
 
 .hero-copy {
   font-size: 0.94rem;
-  line-height: 1.6;
+  line-height: 1.58;
   color: var(--color-ink-primary);
   margin: 0 0 10px;
-  max-width: 42ch;
+  max-width: 44ch;
 }
 
 .hero-copy strong {
@@ -914,7 +920,7 @@ h1, h2, h3, h4 {
   flex-direction: column;
   gap: 10px;
   width: 100%;
-  max-width: 260px;
+  max-width: 270px;
   margin-top: 12px;
 }
 
@@ -922,14 +928,14 @@ h1, h2, h3, h4 {
   position: relative;
   height: 320px;
   min-height: 320px;
-  background: #141a14;
+  background: var(--color-bg-dark);
   overflow: hidden;
 }
 
 @media (min-width: 900px) {
   .hero-media-panel {
     height: 100%;
-    min-height: 0;
+    min-height: 460px;
   }
 }
 
@@ -1021,19 +1027,14 @@ h1, h2, h3, h4 {
 }
 
 .hero-dots {
-  position: absolute;
-  bottom: 18px;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
   display: flex;
-  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 16px;
+  background: var(--color-bg-lavender);
   z-index: 6;
-}
-
-@media (min-width: 900px) {
-  .hero-dots {
-    left: 19%;
-  }
 }
 
 .hero-dot {
